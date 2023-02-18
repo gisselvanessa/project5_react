@@ -1,4 +1,5 @@
 import React from "react";
+import "./styles/home.css";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { setNameTrainer } from "../store/slices/trainerName.slice";

@@ -1,21 +1,30 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
-
+import { useNavigate } from 'react-router-dom';
+import "./styles/pokeCard.css"
 
 const PokeCard = ({pokemon}) => {
 
     // console.log(pokemon);
     
     const [poke, setpoke] = useState()
-    
+    const navigate =useNavigate()
     useEffect(() => {
         axios.get(pokemon.url)
             .then(res=>setpoke(res.data))
             .catch(err=>console.log(err))
     }, [])
-    console.log(poke);
+
+    const handleClick=()=>{
+        navigate(`/pokedex/${poke.id}`)
+        
+    }
+    // console.log(poke);
     return (
-        <div className={`card__container ${poke?.types[0].type.name}-bg`}>
+        <div
+            onClick={handleClick}
+            className={`card__container ${poke?.types[0].type.name}-bg`}
+        >
             <article className={`card ${poke?.types[0].type.name}`}>
                 <header className="card__header">
                     <img
@@ -37,6 +46,7 @@ const PokeCard = ({pokemon}) => {
                         {poke?.types.map((type) => (
                             <li className="card__type" key={type.type.name}>
                                 {type.type.name}
+                                {/* {type.type.name?'/':''} */}
                             </li>
                         ))}
                     </ul>
