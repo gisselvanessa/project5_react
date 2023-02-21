@@ -96,7 +96,7 @@ const PokeInfo = () => {
                                 <span className="bar"></span>
                                 <span
                                     className="bar-2"
-                                    style={{ width: `${stat.base_stat - 15}%` }}
+                                    style={{ width: `${stat.base_stat *0.6666 }%` }}
                                 ></span>
                             </li>
                         ))}
