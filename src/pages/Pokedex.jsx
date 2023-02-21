@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import PokeCard from '../components/Pokedex/PokeCard'
 import SelectTypes from '../components/Pokedex/SelectTypes'
+import Header from './Header'
 import "./styles/pokedex.css"
 
 
@@ -39,29 +40,28 @@ const Pokedex = () => {
     }
 
     return (
-        <div className="pokedex__container">
-            <span className="red__bg"></span>
-            <span className="black__bg"></span>
+        <div id='pokedex_pg'>
+            <Header />
             <div>
-                <div className="pokedex__header">
-                    <header>
-                        <img
-                            className="pokedex__img"
-                            src="public\images\image 11.png"
-                            alt=""
-                        />
-                    </header>
+                <div className="pokedex__body">
                     <h1 className="pokedex__description">
                         <span className="pokedex__welcome">
                             Hi {nameTrainer},
                         </span>{" "}
                         here find your favorite pokemon
                     </h1>
-                    <form onSubmit={handleSubmit}>
-                        <input id="pokemon" type="text" />
-                        <button>Search</button>
-                    </form>
-                    <SelectTypes setselectValue={setselectValue}/>
+                    <div className="pokedex__form-i">
+                        <form className="pokedex__form" onSubmit={handleSubmit}>
+                            <input
+                                className="pokedex__input"
+                                id="pokemon"
+                                type="text"
+                                placeholder="Search a pokemon..."
+                            />
+                            <button className="pokedex__btn">Search</button>
+                        </form>
+                        <SelectTypes setselectValue={setselectValue} />
+                    </div>
                 </div>
 
                 <div className="cards">

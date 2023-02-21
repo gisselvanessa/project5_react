@@ -1,0 +1,125 @@
+.pokeinfo__container{
+    background: #E5E5E5;
+}
+
+.pokeinfo__first {
+    background-color: white;
+    margin: 2rem;
+    padding: 2rem;
+    position: relative;
+    z-index: 0;
+    /* overflow: hidden; */
+}
+.pokeinfo__img {
+    width: 230px;
+    margin: auto;
+    z-index: 10000;
+    /* position: absolute; */
+}
+.pokeinfo__bg {
+    display: block;
+    height: 150px;
+    width: 100%;
+    background-color: rgb(143, 141, 141);
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    left: 0;
+}
+.pi__type{
+    padding: 0.3em 2em;
+    color: white;
+    border-radius: 5px;
+}
+.pokeinfo__id{
+    text-align: center;
+}
+.pokeinfo__name{
+    text-align: center;
+}
+.pokeinfo__wh{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+.pokeinfo__ul{
+    display: flex;
+    gap: 1rem;
+
+}
+.pokeinfo__il{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pokeinfo__info{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+        align-items: center;
+        
+}
+.pokeinfo__info__des{
+    
+}
+.pokeinfo__type{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+        align-items: center;
+}
+.pokeinfo__skills{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+        align-items: center;
+       
+
+}
+.pokeinfo__sk{
+    border: 1px rgb(213, 209, 209) solid;
+    padding: 0.3em 2em;
+    border-radius: 5px;
+}
+.pokeinfor__des{
+    text-align: center;
+    
+}
+
+.pokeinfo__stats{
+    /* padding: 2em; */
+    position: relative;
+}
+.stats{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    /* position: relative; */
+}
+.bar {
+    display: block;
+    height: 1.5em;
+    width: 100%;
+    background-color: rgb(223, 223, 223);
+    /* z-index: -10; */
+        position: absolute;
+}
+.bar-2{
+    display: block;
+        height: 1.5em;
+        /* width: 45%; */
+        background-color: rgb(232, 150, 57);
+        /* position: absolute; */
+        position: relative;
+        /* top: 0px; */
+        /* z-index: 100; */
+        border-radius: 4px;
+}
+            
+.pokeinfo_2{
+    background-color: white;
+        margin: 2rem;
+        padding: 2rem;
+}
+
