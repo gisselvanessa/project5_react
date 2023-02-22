@@ -38,8 +38,12 @@ const PokeInfo = () => {
                 <span
                     className={`pokeinfo__bg ${poke?.types[0].type.name}-bg`}
                 ></span>
-                <h2 className="pokeinfo__id">#{poke?.id}</h2>
-                <h1 className="pokeinfo__name">{poke?.name}</h1>
+                <h2 className={`pokeinfo__id ${poke?.types[0].type.name}-text`}>
+                    #{poke?.id}
+                </h2>
+                <h1 className={`pokeinfo__name ${poke?.types[0].type.name}-text`}>
+                    {poke?.name}
+                </h1>
                 <div className="pokeinfo__wh">
                     <ul className="pokeinfo__ul">
                         <li className="pokeinfo__il">
@@ -70,7 +74,10 @@ const PokeInfo = () => {
                         <h2 className="pokeinfor__des">Skills</h2>
                         <ul className="pokeinfo__skills ">
                             {poke?.abilities.map((ability) => (
-                                <li className="pokeinfo__sk" key={ability.ability.name}>
+                                <li
+                                    className="pokeinfo__sk"
+                                    key={ability.ability.name}
+                                >
                                     {ability.ability.name}
                                     {/* {type.type.name?'/':''} */}
                                 </li>
@@ -79,7 +86,7 @@ const PokeInfo = () => {
                     </div>
                 </div>
                 <div className="pokeinfo__stats">
-                    <h2>Stats</h2>
+                    <h2 className="pokeinfo__title">Stats</h2>
                     <ul
                         className={`pokeinfo__stat ${poke?.types[0].type.name}-text`}
                     >
@@ -96,7 +103,9 @@ const PokeInfo = () => {
                                 <span className="bar"></span>
                                 <span
                                     className="bar-2"
-                                    style={{ width: `${stat.base_stat *0.6666 }%` }}
+                                    style={{
+                                        width: `${stat.base_stat * 0.6666}%`,
+                                    }}
                                 ></span>
                             </li>
                         ))}
@@ -104,10 +113,10 @@ const PokeInfo = () => {
                 </div>
             </div>
             <div className="pokeinfo_2">
-                <h2 className="pokeinfo__moves">Movements</h2>
-                <ul className=" ">
+                <h2 className="pokeinfo__title">Movements</h2>
+                <ul className="pokeinfo__moves ">
                     {poke?.moves.map((move) => (
-                        <li className="" key={move.move.name}>
+                        <li className="pokeinfo__move" key={move.move.name}>
                             {move.move.name}
                             {/* {type.type.name?'/':''} */}
                         </li>

@@ -1,17 +1,23 @@
 .pokeinfo__container{
     background: #E5E5E5;
+    
 }
 
 .pokeinfo__first {
     background-color: white;
     /* background: rgb(255, 255, 255);
         background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgb(221, 220, 220) 94%, rgb(199, 198, 198) 100%); */
-    margin: 2rem;
+    /* margin: 2rem; */
+    margin: auto;
     padding: 2rem;
     position: relative;
     z-index: 0;
     /* overflow: hidden; */
+    max-width: 1000px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
+
 .pokeinfo__img {
     width: 230px;
     margin: auto;
@@ -39,11 +45,14 @@
 }
 .pokeinfo__name{
     text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 0.8rem;
 }
 .pokeinfo__wh{
     display: flex; 
     justify-content: center;
     align-items: center;
+    font-size: 0.8em;
 }
 .pokeinfo__ul{
     display: flex;
@@ -55,12 +64,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap:0.3rem
 }
 .pokeinfo__info{
     display: flex;
     gap: 2rem;
     justify-content: center;
         align-items: center;
+        margin-top: 0.9em;
         
 }
 .pokeinfo__type{
@@ -85,6 +96,8 @@
 }
 .pokeinfor__des{
     text-align: center;
+    /* margin-bottom: 4rem; */
+    font-size: 1.2rem;
     
 }
 .pokeinfo__label{
@@ -99,6 +112,7 @@
     display: flex;
     justify-content: space-between;
     text-transform: uppercase;
+    margin-top: 0.9rem;
     /* position: relative; */
 }
 .bar {
@@ -124,10 +138,26 @@
             
 .pokeinfo_2{
     background-color: white;
-        margin: 2rem;
+    max-width: 1000px;
+        margin: auto;
         padding: 2rem;
+}
+.pokeinfo__moves {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    
+}
+.pokeinfo__move{
+    border: 1px rgb(213, 209, 209) solid;
+        padding: 0.3em 2em;
+        background-color: gainsboro;
+        border-radius: 15px;
 }
 .pokeinfor__des{
     margin-bottom: 0.5rem;
+}
+.pokeinfo__title{
+    margin-bottom: 1rem;
 }
 
