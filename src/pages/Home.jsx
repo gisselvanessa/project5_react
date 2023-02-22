@@ -27,9 +27,28 @@ const Home = () => {
             </div>
 
             <form onSubmit={handleSubmit}>
-                <input className="home__input" id="name" type="text" placeholder="Your name.." />
+                <input
+                    className="home__input"
+                    id="name"
+                    type="text"
+                    placeholder="Your name.."
+                />
                 <button className="home__button">Start</button>
             </form>
+            
+                <div className="home__container">
+                    <span className="red"></span>
+                    <span className="black"></span>
+                    <div>
+                        <div className="home__header">
+                            <header>
+                                <span className="w__ball"></span>
+                                <span className="b__ball"></span>
+                            </header>
+                        </div>
+                    </div>
+                </div>
+            
         </div>
     );
 };
