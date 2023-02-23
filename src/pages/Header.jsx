@@ -11,7 +11,7 @@ const Header = () => {
                       <a href="#/pokedex">
                           <img
                               className="pokedex__img"
-                              src="public\images\image 11.png"
+                              src="\images\image 11.png"
                               alt=""
                           />
                       </a>
